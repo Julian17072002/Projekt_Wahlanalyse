@@ -1,11 +1,14 @@
+CREATE DATABASE  IF NOT EXISTS `db`;
+USE `db`;
+
+DROP TABLE IF EXISTS `Bezirke`;
 CREATE TABLE IF NOT EXISTS Bezirke (
 	Kenn_Nr varchar(50),
     Bezeichnung varchar(50),
     Wahl_Berechtigten varchar(50),
     Wahl_beteiligung_in_Prozent varchar(50),
     ungültige_stimmen varchar(50),
-    gültige_stimmen varchar(50),
-    PRIMARY KEY(Bezeichnung));
+    gültige_stimmen varchar(50));
 
 insert into Bezirke (Kenn_Nr,Bezeichnung,Wahl_Berechtigten,Wahl_beteiligung_in_Prozent,ungültige_stimmen,gültige_stimmen) values ('1', 'Land_Niederösterreich', '1284727', '54.7', '28872', '673844');
 insert into Bezirke (Kenn_Nr,Bezeichnung,Wahl_Berechtigten,Wahl_beteiligung_in_Prozent,ungültige_stimmen,gültige_stimmen) values ('2', 'WK_Weinviertel', '238268', '55.58', '5478', '126952');
@@ -16,13 +19,13 @@ insert into Bezirke (Kenn_Nr,Bezeichnung,Wahl_Berechtigten,Wahl_beteiligung_in_P
 insert into Bezirke (Kenn_Nr,Bezeichnung,Wahl_Berechtigten,Wahl_beteiligung_in_Prozent,ungültige_stimmen,gültige_stimmen) values ('2', 'WK_Wien_Umgebung', '178270', '53.11', '2634', '92050');
 insert into Bezirke (Kenn_Nr,Bezeichnung,Wahl_Berechtigten,Wahl_beteiligung_in_Prozent,ungültige_stimmen,gültige_stimmen) values ('2', 'WK_Niederösterreich_Süd_Ost', '138614', '51.88', '2707', '69204');
 
+DROP TABLE IF EXISTS `Parteien`;
 CREATE TABLE IF NOT EXISTS Parteien (
     Partei varchar(50),
     Bezeichnung varchar(50),
 	Stimmen varchar(50),
     Ant_Prozent varchar(50),
-    Diff_in_Prozent_zur_Vorwahl varchar(50),
-    primary key(Bezeichnung));
+    Diff_in_Prozent_zur_Vorwahl varchar(50));
 
 insert into Parteien (Partei,Bezeichnung,Stimmen,Ant_Prozent,Diff_in_Prozent_zur_Vorwahl) values ('ÖVP', 'Land_Niederösterreich', '222078', '32.96', '-2.22');
 insert into Parteien (Partei,Bezeichnung,Stimmen,Ant_Prozent,Diff_in_Prozent_zur_Vorwahl) values ('SPÖ', 'Land_Niederösterreich', '154919', '22.99', '-0.23');

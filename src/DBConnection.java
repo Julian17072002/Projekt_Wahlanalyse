@@ -4,10 +4,11 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class DBConnection {
-	private final String url = "C:\\Users\\julia\\Desktop\\Privat\\workspace\\db.sql";
+	private final String url = "jdbc:mysql://localhost:3306/db";
 	private String user = "root";
 	private String password = "";
-	private String db = "db.sql";
+	private String db = "Bezirke";
+	private String db1 = "Parteien";
 	private String command;
 
 	public String getUrl() {
@@ -38,6 +39,14 @@ public class DBConnection {
 		this.db = db;
 	}
 
+	public String getDb1() {
+		return db1;
+	}
+
+	public void setDb1(String db1) {
+		this.db1 = db1;
+	}
+	
 	public String getCommand() {
 		return command;
 	}
@@ -47,8 +56,9 @@ public class DBConnection {
 	}
 	
 	public DBConnection (String text) {
+		this.setCommand("select * from Parteien");
 		try {
-			Class.forName("C:\\Users\\julia\\Desktop\\Privat\\workspace\\db.sql").newInstance();
+			Class.forName("com.mysql.jdbc.Driver").newInstance();
 			
 			Connection c = DriverManager.getConnection(this.getUrl(), this.getUser(), this.getPassword());
 			Statement s = c.createStatement();
@@ -59,6 +69,9 @@ public class DBConnection {
 			while (res.next()) {
 				ergStr = ergStr.concat("\n"+res.getString("ID") + res.getString("Name") +"\n");
 			}
+		res.close();
+		s.close();
+		c.close();
 		}
 		catch (Exception e) {
 			System.out.println("!!!Error!!!");
