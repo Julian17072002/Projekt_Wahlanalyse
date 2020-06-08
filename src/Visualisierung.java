@@ -42,4 +42,6 @@ public class Visualisierung extends  Application{
 	  stage.setScene( new Scene( new Group( chart ), 500, 400 ) );
 	  stage.show();
 	}
+
+
 }	

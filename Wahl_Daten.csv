@@ -1,12 +1,248 @@
-;;EU-Wahl vom 25.05.2014 in Niederösterreich;;;;;;;;;;;;;;;Ant. % = Stimmenanteil in %;;;;Diff. % = Differenz zu EU-Wahl 2009                                                                                                                                                                                                                                                                                                                                             ;;;;;;;;;;;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;ÖVP;;;SPÖ;;;FPÖ;;;GRÜNE;;;BZÖ;;;NEOS;;;REKOS;;;ANDERS;;;EUSTOP;;
-Kenn-Nr.;Bezeichnung;Wahl-berecht.;Wahl-bet. in%;ungült. Stim.;Gültige Stimmen;Stimmen;Ant. %;Diff. %;Stimmen;Ant. %;Diff. %;Stimmen;Ant. %;Diff. %;Stimmen;Ant. %;Diff. %;Stimmen;Ant. %;Diff. %;Stimmen;Ant. %;Diff. %;Stimmen;Ant. %;Diff. %;Stimmen;Ant. %;Diff. %;Stimmen;Ant. %;Diff. %
-1;Land Niederösterreich                   ;1.284.727;54,7;28.872;673.844;222.078;32,96;-2,22;154.919;22,99;-0,23;128.076;19,01;6,54;75.257;11,17;4,21;2.335;0,35;-2,54;50.085;7,43;7,43;7.813;1,16;1,16;11.399;1,69;1,69;21.882;3,25;3,25
-2;WK Weinviertel                          ;238.268;55,58;5.478;126.952;44.858;35,33;-2,21;28.399;22,37;0,37;24.722;19,47;7,15;12.816;10,1;3,8;386;0,3;-2,09;8.353;6,58;6,58;1.214;0,96;0,96;2.064;1,63;1,63;4.140;3,26;3,26
-2;WK Waldviertel                          ;181.369;58,34;5.194;100.618;43.284;43,02;-3,71;19.377;19,26;0;16.915;16,81;6,93;8.884;8,83;3,71;343;0,34;-2,45;6.512;6,47;6,47;1.169;1,16;1,16;1.393;1,38;1,38;2.741;2,72;2,72
-2;WK Mostviertel                          ;194.413;56,4;4.990;104.657;40.335;38,54;-2,34;22.078;21,1;-0,27;18.274;17,46;5,31;10.642;10,17;4,41;407;0,39;-2,67;6.803;6,5;6,5;1.450;1,39;1,39;1.533;1,46;1,46;3.135;3;3
-2;WK Niederösterreich Mitte               ;194.645;54,88;4.546;102.268;31.553;30,85;-2,22;25.172;24,61;-0,04;19.192;18,77;5,99;11.850;11,59;4,58;358;0,35;-2,46;7.518;7,35;7,35;1.215;1,19;1,19;1.896;1,85;1,85;3.514;3,44;3,44
-2;WK Niederösterreich Süd                 ;159.148;51,16;3.323;78.095;21.862;27,99;-0,16;20.947;26,82;-0,77;17.157;21,97;7,18;7.477;9,57;4,07;281;0,36;-2,87;5.087;6,51;6,51;1.087;1,39;1,39;1.226;1,57;1,57;2.971;3,8;3,8
-2;WK Wien-Umgebung                        ;178.270;53,11;2.634;92.050;23.242;25,25;-2,69;20.835;22,63;-0,88;16.287;17,69;5,75;15.477;16,81;4,54;291;0,32;-2,76;10.206;11,09;11,09;959;1,04;1,04;1.982;2,15;2,15;2.771;3,01;3,01
-2;WK Niederösterreich Süd-Ost             ;138.614;51,88;2.707;69.204;16.944;24,48;-0,79;18.111;26,17;-0,52;15.529;22,44;7,82;8.111;11,72;4,15;269;0,39;-2,8;5.606;8,1;8,1;719;1,04;1,04;1.305;1,89;1,89;2.610;3,77;3,77
+Land Niederösterreich                   ;1.284.727
+WK Weinviertel                          ;238.268
+WK Waldviertel                          ;181.369
+WK Mostviertel                          ;194.413
+WK Niederösterreich Mitte               ;194.645
+WK Niederösterreich Süd                 ;159.148
+WK Wien-Umgebung                        ;178.270
+WK Niederösterreich Süd-Ost             ;138.614
+Land Niederösterreich                   ;54,7
+WK Weinviertel                          ;55,58
+WK Waldviertel                          ;58,34
+WK Mostviertel                          ;56,4
+WK Niederösterreich Mitte               ;54,88
+WK Niederösterreich Süd                 ;51,16
+WK Wien-Umgebung                        ;53,11
+WK Niederösterreich Süd-Ost             ;51,88
+Land Niederösterreich                   ;28.872
+WK Weinviertel                          ;5.478
+WK Waldviertel                          ;5.194
+WK Mostviertel                          ;4.990
+WK Niederösterreich Mitte               ;4.546
+WK Niederösterreich Süd                 ;3.323
+WK Wien-Umgebung                        ;2.634
+WK Niederösterreich Süd-Ost             ;2.707
+Land Niederösterreich                   ;673.844
+WK Weinviertel                          ;126.952
+WK Waldviertel                          ;100.618
+WK Mostviertel                          ;104.657
+WK Niederösterreich Mitte               ;102.268
+WK Niederösterreich Süd                 ;78.095
+WK Wien-Umgebung                        ;92.050
+WK Niederösterreich Süd-Ost             ;69.204
+Land Niederösterreich                   ;222.078
+WK Weinviertel                          ;44.858
+WK Waldviertel                          ;43.284
+WK Mostviertel                          ;40.335
+WK Niederösterreich Mitte               ;31.553
+WK Niederösterreich Süd                 ;21.862
+WK Wien-Umgebung                        ;23.242
+WK Niederösterreich Süd-Ost             ;16.944
+Land Niederösterreich                   ;32,96
+WK Weinviertel                          ;35,33
+WK Waldviertel                          ;43,02
+WK Mostviertel                          ;38,54
+WK Niederösterreich Mitte               ;30,85
+WK Niederösterreich Süd                 ;27,99
+WK Wien-Umgebung                        ;25,25
+WK Niederösterreich Süd-Ost             ;24,48
+Land Niederösterreich                   ;-2,22
+WK Weinviertel                          ;-2,21
+WK Waldviertel                          ;-3,71
+WK Mostviertel                          ;-2,34
+WK Niederösterreich Mitte               ;-2,22
+WK Niederösterreich Süd                 ;-0,16
+WK Wien-Umgebung                        ;-2,69
+WK Niederösterreich Süd-Ost             ;-0,79
+Land Niederösterreich                   ;154.919
+WK Weinviertel                          ;28.399
+WK Waldviertel                          ;19.377
+WK Mostviertel                          ;22.078
+WK Niederösterreich Mitte               ;25.172
+WK Niederösterreich Süd                 ;20.947
+WK Wien-Umgebung                        ;20.835
+WK Niederösterreich Süd-Ost             ;18.111
+Land Niederösterreich                   ;22,99
+WK Weinviertel                          ;22,37
+WK Waldviertel                          ;19,26
+WK Mostviertel                          ;21,1
+WK Niederösterreich Mitte               ;24,61
+WK Niederösterreich Süd                 ;26,82
+WK Wien-Umgebung                        ;22,63
+WK Niederösterreich Süd-Ost             ;26,17
+Land Niederösterreich                   ;-0,23
+WK Weinviertel                          ;0,37
+WK Waldviertel                          ;0
+WK Mostviertel                          ;-0,27
+WK Niederösterreich Mitte               ;-0,04
+WK Niederösterreich Süd                 ;-0,77
+WK Wien-Umgebung                        ;-0,88
+WK Niederösterreich Süd-Ost             ;-0,52
+Land Niederösterreich                   ;128.076
+WK Weinviertel                          ;24.722
+WK Waldviertel                          ;16.915
+WK Mostviertel                          ;18.274
+WK Niederösterreich Mitte               ;19.192
+WK Niederösterreich Süd                 ;17.157
+WK Wien-Umgebung                        ;16.287
+WK Niederösterreich Süd-Ost             ;15.529
+Land Niederösterreich                   ;19,01
+WK Weinviertel                          ;19,47
+WK Waldviertel                          ;16,81
+WK Mostviertel                          ;17,46
+WK Niederösterreich Mitte               ;18,77
+WK Niederösterreich Süd                 ;21,97
+WK Wien-Umgebung                        ;17,69
+WK Niederösterreich Süd-Ost             ;22,44
+Land Niederösterreich                   ;6,54
+WK Weinviertel                          ;7,15
+WK Waldviertel                          ;6,93
+WK Mostviertel                          ;5,31
+WK Niederösterreich Mitte               ;5,99
+WK Niederösterreich Süd                 ;7,18
+WK Wien-Umgebung                        ;5,75
+WK Niederösterreich Süd-Ost             ;7,82
+Land Niederösterreich                   ;75.257
+WK Weinviertel                          ;12.816
+WK Waldviertel                          ;8.884
+WK Mostviertel                          ;10.642
+WK Niederösterreich Mitte               ;11.850
+WK Niederösterreich Süd                 ;7.477
+WK Wien-Umgebung                        ;15.477
+WK Niederösterreich Süd-Ost             ;8.111
+Land Niederösterreich                   ;11,17
+WK Weinviertel                          ;10,1
+WK Waldviertel                          ;8,83
+WK Mostviertel                          ;10,17
+WK Niederösterreich Mitte               ;11,59
+WK Niederösterreich Süd                 ;9,57
+WK Wien-Umgebung                        ;16,81
+WK Niederösterreich Süd-Ost             ;11,72
+Land Niederösterreich                   ;4,21
+WK Weinviertel                          ;3,8
+WK Waldviertel                          ;3,71
+WK Mostviertel                          ;4,41
+WK Niederösterreich Mitte               ;4,58
+WK Niederösterreich Süd                 ;4,07
+WK Wien-Umgebung                        ;4,54
+WK Niederösterreich Süd-Ost             ;4,15
+Land Niederösterreich                   ;2.335
+WK Weinviertel                          ;386
+WK Waldviertel                          ;343
+WK Mostviertel                          ;407
+WK Niederösterreich Mitte               ;358
+WK Niederösterreich Süd                 ;281
+WK Wien-Umgebung                        ;291
+WK Niederösterreich Süd-Ost             ;269
+Land Niederösterreich                   ;0,35
+WK Weinviertel                          ;0,3
+WK Waldviertel                          ;0,34
+WK Mostviertel                          ;0,39
+WK Niederösterreich Mitte               ;0,35
+WK Niederösterreich Süd                 ;0,36
+WK Wien-Umgebung                        ;0,32
+WK Niederösterreich Süd-Ost             ;0,39
+Land Niederösterreich                   ;-2,54
+WK Weinviertel                          ;-2,09
+WK Waldviertel                          ;-2,45
+WK Mostviertel                          ;-2,67
+WK Niederösterreich Mitte               ;-2,46
+WK Niederösterreich Süd                 ;-2,87
+WK Wien-Umgebung                        ;-2,76
+WK Niederösterreich Süd-Ost             ;-2,8
+Land Niederösterreich                   ;50.085
+WK Weinviertel                          ;8.353
+WK Waldviertel                          ;6.512
+WK Mostviertel                          ;6.803
+WK Niederösterreich Mitte               ;7.518
+WK Niederösterreich Süd                 ;5.087
+WK Wien-Umgebung                        ;10.206
+WK Niederösterreich Süd-Ost             ;5.606
+Land Niederösterreich                   ;7,43
+WK Weinviertel                          ;6,58
+WK Waldviertel                          ;6,47
+WK Mostviertel                          ;6,5
+WK Niederösterreich Mitte               ;7,35
+WK Niederösterreich Süd                 ;6,51
+WK Wien-Umgebung                        ;11,09
+WK Niederösterreich Süd-Ost             ;8,1
+Land Niederösterreich                   ;7,43
+WK Weinviertel                          ;6,58
+WK Waldviertel                          ;6,47
+WK Mostviertel                          ;6,5
+WK Niederösterreich Mitte               ;7,35
+WK Niederösterreich Süd                 ;6,51
+WK Wien-Umgebung                        ;11,09
+WK Niederösterreich Süd-Ost             ;8,1
+Land Niederösterreich                   ;7.813
+WK Weinviertel                          ;1.214
+WK Waldviertel                          ;1.169
+WK Mostviertel                          ;1.450
+WK Niederösterreich Mitte               ;1.215
+WK Niederösterreich Süd                 ;1.087
+WK Wien-Umgebung                        ;959
+WK Niederösterreich Süd-Ost             ;719
+Land Niederösterreich                   ;1,16
+WK Weinviertel                          ;0,96
+WK Waldviertel                          ;1,16
+WK Mostviertel                          ;1,39
+WK Niederösterreich Mitte               ;1,19
+WK Niederösterreich Süd                 ;1,39
+WK Wien-Umgebung                        ;1,04
+WK Niederösterreich Süd-Ost             ;1,04
+Land Niederösterreich                   ;1,16
+WK Weinviertel                          ;0,96
+WK Waldviertel                          ;1,16
+WK Mostviertel                          ;1,39
+WK Niederösterreich Mitte               ;1,19
+WK Niederösterreich Süd                 ;1,39
+WK Wien-Umgebung                        ;1,04
+WK Niederösterreich Süd-Ost             ;1,04
+Land Niederösterreich                   ;11.399
+WK Weinviertel                          ;2.064
+WK Waldviertel                          ;1.393
+WK Mostviertel                          ;1.533
+WK Niederösterreich Mitte               ;1.896
+WK Niederösterreich Süd                 ;1.226
+WK Wien-Umgebung                        ;1.982
+WK Niederösterreich Süd-Ost             ;1.305
+Land Niederösterreich                   ;1,69
+WK Weinviertel                          ;1,63
+WK Waldviertel                          ;1,38
+WK Mostviertel                          ;1,46
+WK Niederösterreich Mitte               ;1,85
+WK Niederösterreich Süd                 ;1,57
+WK Wien-Umgebung                        ;2,15
+WK Niederösterreich Süd-Ost             ;1,89
+Land Niederösterreich                   ;1,69
+WK Weinviertel                          ;1,63
+WK Waldviertel                          ;1,38
+WK Mostviertel                          ;1,46
+WK Niederösterreich Mitte               ;1,85
+WK Niederösterreich Süd                 ;1,57
+WK Wien-Umgebung                        ;2,15
+WK Niederösterreich Süd-Ost             ;1,89
+Land Niederösterreich                   ;21.882
+WK Weinviertel                          ;4.140
+WK Waldviertel                          ;2.741
+WK Mostviertel                          ;3.135
+WK Niederösterreich Mitte               ;3.514
+WK Niederösterreich Süd                 ;2.971
+WK Wien-Umgebung                        ;2.771
+WK Niederösterreich Süd-Ost             ;2.610
+Land Niederösterreich                   ;3,25
+WK Weinviertel                          ;3,26
+WK Waldviertel                          ;2,72
+WK Mostviertel                          ;3
+WK Niederösterreich Mitte               ;3,44
+WK Niederösterreich Süd                 ;3,8
+WK Wien-Umgebung                        ;3,01
+WK Niederösterreich Süd-Ost             ;3,77
+Land Niederösterreich                   ;3,25
+WK Weinviertel                          ;3,26
+WK Waldviertel                          ;2,72
+WK Mostviertel                          ;3
+WK Niederösterreich Mitte               ;3,44
+WK Niederösterreich Süd                 ;3,8
+WK Wien-Umgebung                        ;3,01
+WK Niederösterreich Süd-Ost             ;3,77
