@@ -59,5 +59,11 @@ public class CSVRead {
 			System.out.println(e);
 		}
 	}
+	
+	public static String replaceStrangeChars(String s) {
+//		s = s.substring(1); //entfernt $-Zeichen
+		s = s.replace(",", "."); //entfernt ,-Zeichen
+		return s;
+	}
 
 }
