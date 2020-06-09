@@ -9,7 +9,7 @@ import javafx.scene.chart.XYChart;
 import javafx.scene.layout.HBox;
 //import javafx.scene.chart.XYChart.Series;
 
-public class Visualisierung_der_eingelesenen_Daten extends  Application{
+public class Visualisierung_Vergleich_der_Wahlkreise extends  Application{
 	
 	@Override	
 	public void start(Stage primaryStage) {
@@ -21,7 +21,7 @@ public class Visualisierung_der_eingelesenen_Daten extends  Application{
 		yAxis.setLabel("Stimmenanteil in %"); // Beschriftung der y Achse 
 
 		BarChart<String, Number> barChart = new BarChart<String, Number>(xAxis, yAxis);
-        barChart.setTitle("Ergebnise der EU Wahl in Niederösterreich");
+        barChart.setTitle("Ergebnise der EU Wahl in den Wahlkreisen Niederösterreichs");
         
         XYChart.Series<String, Number> series = new XYChart.Series<>();
         series.setName("Stimmenanteil in %");
@@ -29,15 +29,17 @@ public class Visualisierung_der_eingelesenen_Daten extends  Application{
         CSVRead.einlesen();
         
         for (int zeilen = 40; zeilen <= CSVRead.anzahlZeilen; zeilen = zeilen + 24) {
-        	String s = CSVRead.replaceStrangeChars(CSVRead.arr[zeilen][1]);
-        	double stimmenanteil = Double.parseDouble(s); 
-        	String x = CSVRead.arr[zeilen][2];
-        	XYChart.Data<String, Number> data = new BarChart.Data<>(""+x, stimmenanteil);
-	    	series.getData().add(data);
+        	for (int i = 0; i < 9; i++) {
+	        	String s = CSVRead.replaceStrangeChars(CSVRead.arr[zeilen][1]);
+	        	double stimmenanteil = Double.parseDouble(s); 
+	        	String x = CSVRead.arr[zeilen][2];
+	        	XYChart.Data<String, Number> data = new BarChart.Data<>(""+x, stimmenanteil);
+		    	series.getData().add(data);
+        	}
         }
         
 		HBox root = new HBox();
-		Scene scene = new Scene(root, 550, 600);
+		Scene scene = new Scene(root, 1000, 600);
         
 		barChart.getData().add(series);
 		root.getChildren().add(barChart);
