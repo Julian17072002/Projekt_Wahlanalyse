@@ -3,8 +3,7 @@ SWP_Projekt_Wahlanalyse
 Pflichtenheft – Wahlanalyse (SWP-Projekt)
 Inhalt:
 •	Projekt kurz beschreiben
-•	Was für Ressourcen werden benötigt? (PC, Software, Windows)
-•	Zeitplan mit Meilensteinen
+•	Was für Ressourcen werden benötigt? (PC, Software, Windows,...)
 •	Technische Beschreibung der Lösung
 Beschreibung
 Daten werden aus öffentlicher Quelle geholt und in das Programm eingelesen
