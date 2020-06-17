@@ -32,13 +32,14 @@ public class Visualisierung_Vergleich_der_Wahlkreise extends  Application{
         
         CSVRead.einlesen();
         
-        for (int spalte = 7; spalte <= 30; spalte = spalte + 3) {
-        	for (int zeilen = 5; zeilen <= 11; zeilen++) {
-	        	String s = CSVRead.replaceStrangeChars(CSVRead.arr[zeilen][spalte]);
+        for (int spalte = 6; spalte <= CSVRead.anzahlSpalten -1; spalte = spalte + 3) {
+        	for (int zeilen = 5; zeilen <= CSVRead.anzahlZeilen -1; zeilen++) {
+	        	String s = CSVRead.replaceStrangeChars(CSVRead.arr[zeilen][spalte + 1]);
 	        	double stimmenanteil = Double.parseDouble(s); 
 	        	String x = CSVRead.arr[zeilen][1]; 	
-		        XYChart.Data<String, Number> data = new BarChart.Data<>(""+x, stimmenanteil);
-			    series.getData().add(data);
+	        	String y = CSVRead.arr[2][spalte]; 	
+	        	XYChart.Data<String, Number> data = new BarChart.Data<>(" "+y+x, stimmenanteil);
+    			series.getData().add(data);
         	}
         }
  
